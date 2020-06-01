@@ -216,3 +216,10 @@
       margin-bottom: 350px;
    }
 }
+
+footer {
+   display: flex;
+   justify-content: center;
+   color: white;
+   background-color: black;
+}

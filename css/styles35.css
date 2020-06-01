@@ -140,6 +140,18 @@
       display: block;
       text-align: left;
    }
+
+   .sidenav {
+      width: 230px;
+      position: fixed;
+      z-index: 1;
+      top: 20px;
+      right: 10px;
+      background: #eee;
+      overflow-x: hidden;
+      padding: 8px 0;
+      display: none;
+   }
 }
 
 #welcome {
@@ -181,7 +193,7 @@
    height: 100px;
    background-color: red;
    position: relative;
-   animation-name: example;
+   animation: example;
    animation-duration: 4s;
 }
 
@@ -320,4 +332,11 @@
 
 
 
+}
+
+footer {
+   display: flex;
+   justify-content: center;
+   color: white;
+   background-color: black;
 }
