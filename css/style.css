@@ -424,12 +424,8 @@ article {
 }
 
 
-@import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
+/* @import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700'); */
 
-:root {
-   --color: #3c3163;
-   --transition-time: 0.5s;
-}
 
 .cards-wrapper {
    display: grid;
@@ -444,8 +440,8 @@ article {
 
 .card {
    font-family: 'Heebo';
-   --bg-filter-opacity: 0.5;
-   background-image: linear-gradient(rgba(0, 0, 0, var(--bg-filter-opacity)), rgba(0, 0, 0, var(--bg-filter-opacity))), var(--bg-img);
+   
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
    height: 18em;
    width: 13em;
    font-size: 1.5em;
@@ -458,7 +454,8 @@ article {
    background-size: cover;
    background-position: center;
    box-shadow: 0 0 5em -1em black;
-   transition: all, var(--transition-time);
+   transition: all,
+   0.5s;
    position: relative;
    overflow: hidden;
    border: 10px solid #ccc;
@@ -468,11 +465,10 @@ article {
 @media only screen and (max-width: 1566px) {
    .card {
       font-family: 'Heebo';
-      --bg-filter-opacity: 0.5;
-      background-image: linear-gradient(rgba(0, 0, 0, var(--bg-filter-opacity)), rgba(0, 0, 0, var(--bg-filter-opacity))), var(--bg-img);
+   
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
       height: 17em;
       width: 12em;
-      font-size: 0ю7em;
       color: white;
       border-radius: 0.5em;
       padding: 0.5em;
@@ -482,7 +478,8 @@ article {
       background-size: cover;
       background-position: center;
       box-shadow: 0 0 5em -1em black;
-      transition: all, var(--transition-time);
+      transition: all,
+      0.5s;
       position: relative;
       overflow: hidden;
       border: 8px solid #ccc;
@@ -497,11 +494,10 @@ article {
 @media only screen and (max-width: 1476px) {
    .card {
       font-family: 'Heebo';
-      --bg-filter-opacity: 0.5;
-      background-image: linear-gradient(rgba(0, 0, 0, var(--bg-filter-opacity)), rgba(0, 0, 0, var(--bg-filter-opacity))), var(--bg-img);
+  
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
       height: 16em;
       width: 11em;
-      font-size: 0ю7em;
       color: white;
       border-radius: 0.5em;
       padding: 0.5em;
@@ -511,7 +507,8 @@ article {
       background-size: cover;
       background-position: center;
       box-shadow: 0 0 5em -1em black;
-      transition: all, var(--transition-time);
+      transition: all,
+      0.5s;
       position: relative;
       overflow: hidden;
       border: 8px solid #ccc;
@@ -526,11 +523,10 @@ article {
 @media only screen and (max-width: 1376px) {
    .card {
       font-family: 'Heebo';
-      --bg-filter-opacity: 0.5;
-      background-image: linear-gradient(rgba(0, 0, 0, var(--bg-filter-opacity)), rgba(0, 0, 0, var(--bg-filter-opacity))), var(--bg-img);
+   
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
       height: 15em;
       width: 10em;
-      font-size: 0ю7em;
       color: white;
       border-radius: 0.5em;
       padding: 0.5em;
@@ -540,7 +536,8 @@ article {
       background-size: cover;
       background-position: center;
       box-shadow: 0 0 5em -1em black;
-      transition: all, var(--transition-time);
+      transition: all,
+      0.5s;
       position: relative;
       overflow: hidden;
       border: 8px solid #ccc;
@@ -555,8 +552,8 @@ article {
 @media only screen and (max-width: 1376px) {
    .card {
       font-family: 'Heebo';
-      --bg-filter-opacity: 0.5;
-      background-image: linear-gradient(rgba(0, 0, 0, var(--bg-filter-opacity)), rgba(0, 0, 0, var(--bg-filter-opacity))), var(--bg-img);
+      
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
       height: 15em;
       width: 10em;
       font-size: 0.7em;
@@ -569,7 +566,8 @@ article {
       background-size: cover;
       background-position: center;
       box-shadow: 0 0 5em -1em black;
-      transition: all, var(--transition-time);
+      transition: all,
+      0.5s;
       position: relative;
       overflow: hidden;
       border: 8px solid #ccc;
@@ -584,8 +582,8 @@ article {
 @media only screen and (max-width: 360px) {
    .card {
       font-family: 'Heebo';
-      --bg-filter-opacity: 0.5;
-      background-image: linear-gradient(rgba(0, 0, 0, var(--bg-filter-opacity)), rgba(0, 0, 0, var(--bg-filter-opacity))), var(--bg-img);
+
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
       height: 15em;
       width: 10em;
       font-size: 0.7em;
@@ -598,7 +596,8 @@ article {
       background-size: cover;
       background-position: center;
       box-shadow: 0 0 5em -1em black;
-      transition: all, var(--transition-time);
+      transition: all,
+      0.5s;
       position: relative;
       overflow: hidden;
       border: 8px solid #ccc;
@@ -638,11 +637,12 @@ article {
    padding: 0 0.5em;
    margin-right: 0.5em;
    line-height: 1.5em;
-   transition: all, var(--transition-time);
+   transition: all,
+   0.5s;
 }
 
 .card:hover .tags .tag {
-   background: var(--color);
+   background: #3c3163;;
    color: white;
 }
 
@@ -666,7 +666,8 @@ article {
    left: -50%;
    top: -50%;
    z-index: -5;
-   transition: all, var(--transition-time);
+   transition: all,
+   0.5s;
    transition-timing-function: ease-in-out;
 }
 
@@ -683,7 +684,8 @@ article {
 }
 
 .card:hover {
-   color: var(--color);
+   color: #3c3163;
+   ;
 }
 
 .card:hover:before,
@@ -705,6 +707,7 @@ article {
 }
 
 .info img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
    height: 3em;
    margin-right: 0.5em;
 }
