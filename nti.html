@@ -28,44 +28,60 @@
 
 <body>
 
-   <header>
-      <script src="script.js"></script>
-      <div class="topnav" id="myTopnav">
-
-         <a href="index.html" class="active">ТОЧКА КИПЕНИЯ</a>
-         <a href="#news">Мы сегодня</a>
-         <a href="#contact">Мы в будущем</a>
-         <a href="#contact">Эффекты</a>
-         <a href="#contact">Контакты</a>
-
-         <div>
-            <button class="btn btn-secondary  dropdown-toggle header__dropdown" type="button" id="dropdownMenu2"
-               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               Направления
-            </button>
-            <div class="dropdown-menu header__dropdown_menu" aria-labelledby="dropdownMenu2">
-               <a href="nti.html">Движение НТИ</a>
-               <button class="dropdown-item" type="button">Сквозные технологии</button>
-               <button class="dropdown-item" type="button">Кружковое движение</button>
-               <a href="university35.html">Университет 2035</a>
-               <button class="dropdown-item" type="button">Точка роста</button>
-               <button class="dropdown-item" type="button">Наставничество</button>
-               <button class="dropdown-item" type="button">Кадры в ЦЭ</button>
-            </div>
+   <section class="nav-bar">
+      <div class="nav-container">
+         <div class="brand">
+            <a href="#"><img src="img/icon.png" alt=""></a>
          </div>
+         <nav>
+            <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
+            <ul class="nav-list">
+               <li>
+                  <a href="#">ТОЧКА КИПЕНИЯ</a>
+               </li>
 
-         <div class="sidenav">
-            <a href="#nti">Повестка</a>
-            <a href="#nti2">Как есть сейчас</a>
-            <a href="#nti3">Как планиурется</a>
-            <a href="#nti4$">Эффекты</a>
-         </div>
-
-         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-         </a>
+               <li>
+                  <a href="#">Направления</a>
+                  <ul class="nav-dropdown">
+                     <li>
+                        <a href="nti.html">Движение НТИ</a>
+                     </li>
+                     <li>
+                        <a href="#">Сквозные технологии</a>
+                     </li>
+                     <li>
+                        <a href="#">Кружковое Движение</a>
+                     </li>
+                     <li>
+                        <a href="university35.html">Университет 2035</a>
+                     </li>
+                     <li>
+                        <a href="#">Точка роста</a>
+                     </li>
+                     <li>
+                        <a href="#">Наставничество</a>
+                     </li>
+                     <li>
+                        <a href="#">Кадры в ЦЭ</a>
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#aims">Наши цели</a>
+               </li>
+               <li>
+                  <a href="#mission">Наши миссия</a>
+               </li>
+               <li>
+                  <a href="role">Возможности</a>
+               </li>
+               <li>
+                  <a href="#">Контакты</a>
+               </li>
+            </ul>
+         </nav>
       </div>
-   </header>
+   </section>
 
    <section id="nti">
 
@@ -88,13 +104,15 @@
             <div class="item1">
                <p>Автонет – бакалаврская программа по разработке беспилотника, бакалаврские и магистерские программы на
                   транспортном факультете, участие и победы в профильных конкурсах
-               </p>r
+               </p>
             </div>
             <div class="item2">
                <p>Аэронет – магистерская программа по РБС и эргономике, индустриальные партнеры.
                </p>
             </div>
-            <div class="item3">Нейронет – научная лаборатория, проекты</div>
+            <div class="item3">
+               <p>Нейронет – научная лаборатория, проекты</p>
+            </div>
             <div class="item4">
                <p>Эдунет – методические наработки по различным направлениям
                </p>
@@ -130,6 +148,8 @@
       </div>
 
    </section>
+
+
 
    <footer>
       <p> ФИО: АЛЕКСЕЕВ ДАНИИЛ ВЛАДИСЛАВОВИЧ <br>
