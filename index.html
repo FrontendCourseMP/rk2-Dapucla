@@ -23,194 +23,287 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
-    <main>
-
-
-        <header>
-            <script src="script.js"></script>
-            <div class="topnav" id="myTopnav">
-
-                <a href="#home" class="active">ТОЧКА КИПЕНИЯ</a>
-                <a href="#news">Мы сегодня</a>
-                <a href="#contact">Мы в будущем</a>
-                <a href="#contact">Эффекты</a>
-                <a href="#contact">Контакты</a>
-
-                <div>
-                    <button class="btn btn-secondary  dropdown-toggle header__dropdown" type="button" id="dropdownMenu2"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Направления
-                    </button>
-                    <div class="dropdown-menu header__dropdown_menu" aria-labelledby="dropdownMenu2">
-                        <a href="nti.html">Движение НТИ</a>
-                        <button class="dropdown-item" type="button">Сквозные технологии</button>
-                        <button class="dropdown-item" type="button">Кружковое движение</button>
-                        <a href="university35.html">Университет 2035</a>
-                        <button class="dropdown-item" type="button">Точка роста</button>
-                        <button class="dropdown-item" type="button">Наставничество</button>
-                        <button class="dropdown-item" type="button">Кадры в ЦЭ</button>
-                    </div>
-                </div>
 
 
 
 
-
-
-
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
+    <section class="nav-bar">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="#"><img src="img/icon.png"></a>
             </div>
-        </header>
+            <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="#">ТОЧКА КИПЕНИЯ</a>
+                    </li>
 
-        <section id="welcome">
+                    <li>
+                        <a href="#">Направления</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="#nti.html">Движение НТИ</a>
+                            </li>
+                            <li>
+                                <a href="#">Сквозные технологии</a>
+                            </li>
+                            <li>
+                                <a href="#">Кружковое Движение</a>
+                            </li>
+                            <li>
+                                <a href="#university35.html">Университет 2035</a>
+                            </li>
+                            <li>
+                                <a href="#">Точка роста</a>
+                            </li>
+                            <li>
+                                <a href="#">Наставничество</a>
+                            </li>
+                            <li>
+                                <a href="#">Кадры в ЦЭ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Наши цели</a>
+                    </li>
+                    <li>
+                        <a href="#">Наши миссия</a>
+                    </li>
+                    <li>
+                        <a href="#">Возможности</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
 
-            <div class="welcome__title">
-                <h1> РАБОТА УНИВЕРСИТЕТСКОЙ <br>"ТОЧКИ КИПЕНИЯ"</h1>
-                <h2>ОТ ЗАПУСКА К ДЕЯТЕЛЬНОСТИ</h2>
-            </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
 
 
 
-            <div class="modal fade" id="darkModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog form-dark" role="document">
-                    <!--Content-->
-                    <div class="modal-content card card-image" style="background-color: black;">
-                        <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
-                            <!--Header-->
-                            <div class="modal-header text-center pb-4">
-                                <h3 class="modal-title w-100 white-text font-weight-bold" id="myModalLabel">
-                                    <strong>ЗАЯВКА</strong> <a class="green-text font-weight-bold"></a>
-                                </h3>
-                                <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
+
+
+<section id="welcome">
+
+    <div class="welcome__title">
+        <h1> РАБОТА УНИВЕРСИТЕТСКОЙ <br>"ТОЧКИ КИПЕНИЯ"</h1>
+        <h2>ОТ ЗАПУСКА К ДЕЯТЕЛЬНОСТИ</h2>
+    </div>
+
+    <div class="welcome__button">
+
+
+
+        <div class="modal fade" id="darkModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog form-dark" role="document">
+                <!--Content-->
+                <div class="modal-content card card-image" style="background-color: black;">
+                    <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+                        <!--Header-->
+                        <div class="modal-header text-center pb-4">
+                            <h3 class="modal-title w-100 white-text font-weight-bold" id="myModalLabel">
+                                <strong>ЗАЯВКА</strong> <a class="green-text font-weight-bold"></a>
+                            </h3>
+                            <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <!--Body-->
+                        <div class="modal-body">
                             <!--Body-->
-                            <div class="modal-body">
-                                <!--Body-->
-                                <div class="md-form mb-5">
-                                    <input type="email" id="Form-email5" class="form-control validate white-text">
-                                    <label data-error="wrong" data-success="right" for="Form-email5">ВАША ПОЧТА</label>
+                            <div class="md-form mb-5">
+                                <input type="email" id="Form-email5" class="form-control validate white-text">
+                                <label data-error="wrong" data-success="right" for="Form-email5">ВАША ПОЧТА</label>
+                            </div>
+
+                            <div class="md-form pb-3">
+                                <input type="password" id="Form-pass5" class="form-control validate white-text">
+                                <label data-error="wrong" data-success="right" for="Form-pass5">ВАШЕ ИМЯ</label>
+                                <div class="form-group mt-4">
+                                    <input class="form-check-input" type="checkbox" id="checkbox624">
+                                    <label for="checkbox624" class="white-text form-check-label">Получать
+                                        уведолмения<a href="#" class="green-text font-weight-bold">
+                                            принять соглашение</a></label>
                                 </div>
+                            </div>
 
-                                <div class="md-form pb-3">
-                                    <input type="password" id="Form-pass5" class="form-control validate white-text">
-                                    <label data-error="wrong" data-success="right" for="Form-pass5">ВАШЕ ИМЯ</label>
-                                    <div class="form-group mt-4">
-                                        <input class="form-check-input" type="checkbox" id="checkbox624">
-                                        <label for="checkbox624" class="white-text form-check-label">Получать
-                                            уведолмения<a href="#" class="green-text font-weight-bold">
-                                                принять соглашение</a></label>
-                                    </div>
+                            <!--Grid row-->
+                            <div class="row d-flex align-items-center mb-4">
+
+                                <!--Grid column-->
+                                <div class="text-center mb-3 col-md-12">
+                                    <button type="button"
+                                        class="btn btn-success btn-block btn-rounded z-depth-1">ПРИНЯТЬ
+                                        УЧАСТИЕ</button>
                                 </div>
-
-                                <!--Grid row-->
-                                <div class="row d-flex align-items-center mb-4">
-
-                                    <!--Grid column-->
-                                    <div class="text-center mb-3 col-md-12">
-                                        <button type="button"
-                                            class="btn btn-success btn-block btn-rounded z-depth-1">ПРИНЯТЬ
-                                            УЧАСТИЕ</button>
-                                    </div>
-                                    <!--Grid column-->
-
-                                </div>
-                                <!--Grid row-->
-
-                                <!--Grid row-->
-                                <div class="row">
-
-                                    <!--Grid column-->
-                                    <div class="col-md-12">
-                                        <p class="font-small white-text d-flex justify-content-end"> <a href="#"
-                                                class="green-text ml-1 font-weight-bold">
-                                            </a></p>
-                                    </div>
-                                    <!--Grid column-->
-
-                                </div>
-                                <!--Grid row-->
+                                <!--Grid column-->
 
                             </div>
-                        </div>
-                    </div>
-                    <!--/.Content-->
-                </div>
-            </div>
-            <!-- Modal -->
+                            <!--Grid row-->
 
-            <div class="text-center">
-                <a href="" class="btn btn-info btn-rounded" data-toggle="modal" data-target="#darkModalForm">Принять
-                    участие в "Точке Кипения"</a>
-            </div>
+                            <!--Grid row-->
+                            <div class="row">
 
-        </section>
+                                <!--Grid column-->
+                                <div class="col-md-12">
+                                    <p class="font-small white-text d-flex justify-content-end"> <a href="#"
+                                            class="green-text ml-1 font-weight-bold">
+                                        </a></p>
+                                </div>
+                                <!--Grid column-->
 
-        <section id="mission">
-            <div class="items">
-                <h1>Наша миссия</h1>
-                <p>100% студентов, преподавателей, <br> администрации вовлечены в повестку
-                    <br> стратегического развития
-                    университета</p>
-            </div>
-
-
-        </section>
-
-        <section id="aims">
-            <div class="items2">
-
-                <h1>Наши Цели и Задачи </h1>
-            </div>
-
-            <div class="card bg-dark mb-3 " style="max-width: 540px;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img src="img/card1.jpg" class=" card-img" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Цели</h5>
-                            <p class="card-text">Тестирование способов достижения стратегических задач университета,
-                                в том числе поиск новых: быстро, удобно, комплексно.</p>
+                            </div>
+                            <!--Grid row-->
 
                         </div>
                     </div>
                 </div>
+                <!--/.Content-->
             </div>
+        </div>
+        <!-- Modal -->
 
-            <div class="card bg-dark mb-3" style="max-width: 540px;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img src="img/card2.jpg" class="card-img" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Задачи</h5>
-                            <p class="card-text">Связать 9 стратегических целей и 20 стратегических проектов с бизнес-
-                                интересами внешних и внутренних сообществ университета, внешняя (относительно
-                                разработчиков)
-                                обратная связь по проектам
-                                Стратегическая цель – формирование культуры ответственности за выбор
-                                личной образовательной и карьерной траектории</p>
-                        </div>
+        <div class="text-center">
+            <a href="" class="btn btn-info btn-rounded" data-toggle="modal" data-target="#darkModalForm">Принять
+                участие в "Точке Кипения"</a>
+        </div>
+    </div>
+</section>
+
+<section id="mission">
+    <div class="items">
+        <h1>Наша миссия</h1>
+        <p>100% студентов, преподавателей, <br> администрации вовлечены в повестку
+            <br> стратегического развития
+            университета</p>
+    </div>
+
+
+</section>
+
+<section id="aims">
+    <div class="items2">
+
+        <h1>Цели,Задачи,Роль </h1>
+    </div>
+
+    <div class="cards-wrapper">
+
+        <div class="card-grid-space">
+            <a class="card" href="#"
+                style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)">
+                <div>
+                    <h1>Цели</h1>
+                    <p>Тестирование способов достижения стратегических задач университета,
+                        в том числе поиск новых: быстро, удобно, комплексно.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="card-grid-space">
+            <a class="card" href="#"
+                style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
+                <div>
+                    <h1>Стратегическая цель</h1>
+                    <p>Формирование культуры ответственности за выбор
+                        личной образовательной и карьерной траектории</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="card-grid-space">
+            <a class="card" href="#" style="--bg-img: url('../img/card1.jpg');">
+                <div>
+                    <h1>Задачи</h1>
+                    <p>Learn how to use links and images along with file paths…</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="card-grid-space">
+            <a class="card" href="#" style="--bg-img: url('../img/card2.jpg')">
+                <div>
+                    <h1>Роль</h1>
+                    <p>Роль в вузе (функционал в университете будущего) – площадка проработки стратегических проектов
+                        университета (коммуникация студентов, преподавателей, исследователей, администрации,
+                        бизнес-сообществ)</p>
+                </div>
+            </a>
+        </div>
+        <!-- https://images.unsplash.com/photo-1520839090488-4a6c211e2f94?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38951b8650067840307cba514b554ba5&auto=format&fit=crop&w=1350&q=80 -->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="card1"></div>
+    <div class="card bg-dark mb-3 " style="max-width: 540px;">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="img/card1.jpg" class=" card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Цели</h5>
+                    <p class="card-text">Тестирование способов достижения стратегических задач университета,
+                        в том числе поиск новых: быстро, удобно, комплексно.</p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card bg-dark mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="img/card2.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Задачи</h5>
+                        <p class="card-text">Связать 9 стратегических целей и 20 стратегических проектов с бизнес-
+                            интересами внешних и внутренних сообществ университета, внешняя (относительно
+                            разработчиков)
+                            обратная связь по проектам
+                            Стратегическая цель – формирование культуры ответственности за выбор
+                            личной образовательной и карьерной траектории</p>
                     </div>
                 </div>
             </div>
+        </div> -->
 
 
 
-        </section>
+</section>
 
-        <section id="role">
+<!--   <section id="role">
 
             <div class="role1">
                 <h1>Возможности для сотрудников</h1>
@@ -247,17 +340,17 @@
             </div>
 
 
-        </section>
-    </main>
-    <footer>
-        <p> ФИО: АЛЕКСЕЕВ ДАНИИЛ ВЛАДИСЛАВОВИЧ <br>
-            ГРУППА: 191-322<br>
-            Дата выполнения: 01.06.2020
+        </section> -->
+</main>
+<footer>
+    <p> ФИО: АЛЕКСЕЕВ ДАНИИЛ ВЛАДИСЛАВОВИЧ <br>
+        ГРУППА: 191-322<br>
+        Дата выполнения: 01.06.2020
 
 
-        </p>
+    </p>
 
-    </footer>
+</footer>
 </body>
 
 </html>
