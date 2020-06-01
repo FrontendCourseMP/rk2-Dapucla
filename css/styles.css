@@ -342,14 +342,41 @@ article {
    }
 }
 
+.povestka a:link,
+a:visited {
+   background-color: #f44336;
+   color: black;
+   padding: 10px 15px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+}
 
-
+.povestka a:hover,
+a:active {
+   background-color: red;
+}
 
 @media screen and (max-width: 680px) {
    footer p {
       font-size: 0.4rem;
 
    }
+}
+
+@media screen and (max-width: 577px) {
+
+   .povestka a:link,
+   a:visited {
+      background-color: #f44336;
+      color: black;
+      padding: 2px 5px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+   }
+
+
 }
 
 footer {
